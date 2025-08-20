@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: UserRegistrationService
+  email:
+    port: 8080
+    host: www.google.com
