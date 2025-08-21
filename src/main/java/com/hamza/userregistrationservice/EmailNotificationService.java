@@ -1,9 +1,11 @@
 package com.hamza.userregistrationservice;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
-@Service
+@Primary
+@Service("email")
 public class EmailNotificationService implements NotificationService {
 
     @Value("${spring.email.host}")
